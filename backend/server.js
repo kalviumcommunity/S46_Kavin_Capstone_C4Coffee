@@ -1,5 +1,8 @@
 require('dotenv').config();
 const express = require('express');
+const mongoose = require('mongoose');
+
+const coffeeRecipeRoutes = require('./routes/coffeeRecipe')
 
 const app = express();
 
@@ -11,22 +14,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/api', (req, res) => {
-  res.status(200).json({ messgae: 'Sent get request' });
-});
+app.use(coffeeRecipeRoutes)
 
-app.post('/api', (req, res) => {
-  res.status(201).json({ messgae: 'Sent post request' });
-});
+mongoose.connect(process.env.MONGO_URI).then(() => {
+  console.log('Connected to database')
 
-app.patch('/api', (req, res) => {
-  res.status(200).json({ messgae: 'Sent patch request' });
-});
-
-app.delete('/api', (req, res) => {
-  res.status(200).json({ messgae: 'Sent delete request' });
-});
-
-app.listen(process.env.PORT, () => {
-  console.log(`Listening to port ${process.env.PORT}`);
+  app.listen(process.env.PORT, () => {
+    console.log(`Listening to port ${process.env.PORT}`);
+  });
 });
