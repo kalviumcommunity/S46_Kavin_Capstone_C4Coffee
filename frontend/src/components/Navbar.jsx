@@ -1,79 +1,96 @@
-import React, { useState } from 'react';
-import logo from '../assets/logo.png';
+import React, { useState } from "react";
+import logo from "../assets/coffeeCupIcon.png";
 
 function Navbar() {
   const [showDropDown, setShowDropDown] = useState(false);
 
   return (
     <>
-      <div className="bg-backGround2 w-full grid grid-flow-col items-center grid-cols-3 md:grid-cols-4 shadow-lg sticky top-0 z-10">
-        <div className="mx-10 flex flex-row items-center col-span-2 md:col-span-1">
-          <img src={logo} alt="logo" className="h-16 md:h-28" />
-          <span className="text-3xl font-extrabold text-text2 xl:block hidden">
+      <div className="sticky top-0 z-10 grid w-full grid-flow-col grid-cols-3 items-center bg-backGround2 shadow-lg md:grid-cols-4">
+        <div className="col-span-2 mx-10 flex flex-row items-center md:col-span-1">
+          <img src={logo} alt="logo" className="m-2 h-10 md:h-16" />
+          <span className="hidden text-3xl font-extrabold text-text2 xl:block">
             C4Coffee
           </span>
         </div>
-        <div className="text-text2 font-bold text-xl md:grid grid-flow-col col-span-2 hidden">
+        <div className="col-span-2 hidden grid-flow-col text-xl font-bold text-text2 md:grid">
           <div>Home</div>
           <div>Coffee Types</div>
           <div>Coffee shops</div>
           <div>Coffee recipe</div>
         </div>
-        <div className="md:grid grid-flow-col justify-end grid-cols-2 gap-10 mx-auto font-bold text-lg hidden">
-          <div className="text-text2 border-4 py-2 px-6 border-text2 rounded-md transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
+        <div className="mx-auto hidden grid-flow-col grid-cols-2 justify-end gap-10 text-lg font-bold md:grid">
+          <div className="rounded-md border-4 border-text2 px-6 py-2 text-text2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
             Login
           </div>
-          <div className="text-backGround2 bg-text2 flex justify-center items-center rounded-md hover:cursor-pointer transition duration-300 ease-in hover:bg-backGround2 hover:text-text2">
+          <div className="flex items-center justify-center rounded-md bg-text2 text-backGround2 transition duration-300 ease-in hover:cursor-pointer hover:bg-backGround2 hover:text-text2">
             Sign up
           </div>
         </div>
         <div
-          className="justify-self-center block md:hidden"
+          className="block justify-self-center md:hidden"
           onClick={() => setShowDropDown((prevState) => !prevState)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+          {showDropDown ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="h-6 w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="h-6 w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          )}
         </div>
       </div>
       <div
         className={
           showDropDown
-            ? 'fixed right-0 grid grid-flow-rows bg-backGround2 justify-center items-center gap-4 animate-in slide-in-from-right w-3/4 h-full duration-700 bg-opacity-90'
-            : 'animate-out slide-out-to-right duration-700'
+            ? "grid-flow-rows fixed right-0 z-10 grid h-full w-3/4 items-center justify-center gap-4 bg-backGround2 bg-opacity-90 duration-700 animate-in slide-in-from-right"
+            : "duration-700 animate-out slide-out-to-right"
         }
       >
         <div
           className={
             showDropDown
-              ? 'text-text2 font-bold text-lg grid grid-flow-rows place-items-center'
-              : 'hidden'
+              ? "grid-flow-rows z-10 grid place-items-center text-lg font-bold text-text2"
+              : "hidden"
           }
         >
           <div className="m-2">Home</div>
-          <hr className="w-full border-text1 border-2 rounded-md" />
+          <hr className="w-full rounded-md border-2 border-text1" />
           <div className="m-2">Coffee Types</div>
-          <hr className="w-full border-text1 border-2 rounded-md" />
+          <hr className="w-full rounded-md border-2 border-text1" />
           <div className="m-2">Coffee shops</div>
-          <hr className="w-full border-text1 border-2 rounded-md" />
+          <hr className="w-full rounded-md border-2 border-text1" />
           <div className="m-2">Coffee recipe</div>
         </div>
-        <div className={showDropDown ? 'flex gap-10 m-2' : 'hidden'}>
-          <div className="text-text2 text-sm border-4 py-1 border-text2 rounded-md transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2 w-20 justify-center items-center flex">
+        <div className={showDropDown ? "m-2 flex gap-10" : "hidden"}>
+          <div className="flex w-20 items-center justify-center rounded-md border-4 border-text2 py-1 text-sm text-text2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
             Login
           </div>
-          <div className="text-backGround2 text-sm bg-text2 flex justify-center items-center rounded-md hover:cursor-pointer transition duration-300 ease-in hover:bg-backGround2 hover:text-text2 w-20">
+          <div className="flex w-20 items-center justify-center rounded-md bg-text2 text-sm text-backGround2 transition duration-300 ease-in hover:cursor-pointer hover:bg-backGround2 hover:text-text2">
             Sign up
           </div>
         </div>
