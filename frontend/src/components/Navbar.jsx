@@ -15,9 +15,9 @@ function Navbar() {
         </div>
         <div className="col-span-2 hidden grid-flow-col text-xl font-bold text-text2 md:grid">
           <div>Home</div>
-          <div>Coffee Types</div>
-          <div>Coffee shops</div>
           <div>Coffee recipe</div>
+          <div>Coffee shops</div>
+          <div>Coffee review</div>
         </div>
         <div className="mx-auto hidden grid-flow-col grid-cols-2 justify-end gap-10 text-lg font-bold md:grid">
           <div className="rounded-md border-4 border-text2 px-6 py-2 text-text2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
@@ -80,11 +80,11 @@ function Navbar() {
         >
           <div className="m-2">Home</div>
           <hr className="w-full rounded-md border-2 border-text1" />
-          <div className="m-2">Coffee Types</div>
+          <div className="m-2">Coffee recipe</div>
           <hr className="w-full rounded-md border-2 border-text1" />
           <div className="m-2">Coffee shops</div>
           <hr className="w-full rounded-md border-2 border-text1" />
-          <div className="m-2">Coffee recipe</div>
+          <div className="m-2">Coffee review</div>
         </div>
         <div className={showDropDown ? "m-2 flex gap-10" : "hidden"}>
           <div className="flex w-20 items-center justify-center rounded-md border-4 border-text2 py-1 text-sm text-text2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
