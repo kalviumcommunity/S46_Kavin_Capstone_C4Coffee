@@ -1,18 +1,25 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    email: {
-        type: String,
+  username: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    validate: {
+      validator: (v) => {
+        const re = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+        return re.test(v);
+      },
+      message: 'Enter a valid email',
     },
-    username: {
-        type: String,
-        required: true
-    },
-    password: {
-        type: String
-    }
-})
+  },
+  password: {
+    type: String,
+  },
+});
 
-module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('User', userSchema);
