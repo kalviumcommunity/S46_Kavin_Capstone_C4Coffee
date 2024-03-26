@@ -8,6 +8,12 @@
   background-repeat: no-repeat;
 }
 
+.background-pic {
+  background-image: url("./assets/coffeeBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {

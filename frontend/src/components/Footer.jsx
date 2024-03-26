@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="bg-backGround2 p-4 md:px-24 md:py-10">
-      <div className="grid grid-flow-col grid-cols-3">
+      <div className="grid grid-flow-col md:grid-cols-3">
         <div className="justify-self-center">
           <div className="font-bold text-text2 md:text-xl">C4Coffee</div>
           <div className="mt-4 font-semibold text-text1 md:text-lg md:leading-loose">
@@ -11,7 +11,7 @@ function Footer() {
             lover
           </div>
         </div>
-        <div className="justify-self-center">
+        <div className="hidden justify-self-center md:block">
           <div className="mb-2 font-bold text-text2 md:text-xl">
             Quick Links:
           </div>
