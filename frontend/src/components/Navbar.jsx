@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/coffeeCupIcon.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -21,10 +22,10 @@ function Navbar() {
         </div>
         <div className="mx-auto hidden grid-flow-col grid-cols-2 justify-end gap-10 text-lg font-bold md:grid">
           <div className="rounded-md border-4 border-text2 px-6 py-2 text-text2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
-            Login
+            <Link to={"/login"}>Login</Link>
           </div>
           <div className="flex items-center justify-center rounded-md bg-text2 text-backGround2 transition duration-300 ease-in hover:cursor-pointer hover:bg-backGround2 hover:text-text2">
-            Sign up
+            <Link to={"/signup"}>Sign up</Link>
           </div>
         </div>
         <div
@@ -88,10 +89,10 @@ function Navbar() {
         </div>
         <div className={showDropDown ? "m-2 flex gap-10" : "hidden"}>
           <div className="flex w-20 items-center justify-center rounded-md border-4 border-text2 py-1 text-sm text-text2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-text2 hover:text-backGround2">
-            Login
+            <Link to={"/login"}>Login</Link>
           </div>
           <div className="flex w-20 items-center justify-center rounded-md bg-text2 text-sm text-backGround2 transition duration-300 ease-in hover:cursor-pointer hover:bg-backGround2 hover:text-text2">
-            Sign up
+            <Link to={"/signup"}>Sign up</Link>
           </div>
         </div>
       </div>
