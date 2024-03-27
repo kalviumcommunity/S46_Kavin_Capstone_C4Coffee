@@ -9,16 +9,10 @@ const userSchema = new Schema({
   },
   email: {
     type: String,
-    validate: {
-      validator: (v) => {
-        const re = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-        return re.test(v);
-      },
-      message: 'Enter a valid email',
-    },
   },
   password: {
     type: String,
+    required: true
   },
 });
 
