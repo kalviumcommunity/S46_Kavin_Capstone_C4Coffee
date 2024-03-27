@@ -2,27 +2,24 @@ const router = require('express').Router();
 const { hashSync, compareSync } = require('bcrypt');
 const { sign } = require('jsonwebtoken');
 const passport = require('passport');
+const { userValidator } = require('../config/validator');
 
 const User = require('../models/userModel');
 
-router.get('/test', (req, res) => {
-  res.status(200).send('got the request');
-});
-
 router.post('/signup', async (req, res) => {
-  const { email, username, password } = req.body;
+  // Using joi to validate user send details
+  const { error, value } = userValidator(req.body);
 
-  //Checking if the fields are empty
-  if (!email || !username || !password) {
+  // Checking if there is any error
+  if (error) {
     return res.status(400).json({
       success: false,
-      message: {
-        email: !email,
-        username: !username,
-        password: !password,
-      },
+      message: error.details[0].message,
     });
   }
+
+  // Getting the values after validation
+  const { email, username, password } = value;
 
   // Checking if the user already exists
   const user = await User.findOne({ username });
@@ -30,16 +27,6 @@ router.post('/signup', async (req, res) => {
     return res.status(400).json({
       success: false,
       message: 'User already exists',
-    });
-  }
-
-  //Checking tha password strength
-  const regex =
-    /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-  if (!regex.test(password)) {
-    return res.status(400).json({
-      success: false,
-      message: 'Password is not strong',
     });
   }
 
@@ -70,7 +57,7 @@ router.post('/signup', async (req, res) => {
     //If new user is not created
     res.status(400).json({
       success: false,
-      message: e.message.split(':')[2],
+      message: e,
     });
   }
 });
@@ -78,14 +65,18 @@ router.post('/signup', async (req, res) => {
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
-  //Checking if the fields are empty
-  if (!username || !password) {
+  //Checking if username and password fields are not empty
+  if (!username.trim().length) {
     return res.status(400).json({
       success: false,
-      message: {
-        username: !username,
-        password: !password,
-      },
+      message: 'Username is required',
+    });
+  }
+
+  if (!password.trim().length) {
+    return res.status(400).json({
+      success: false,
+      message: 'Password is required',
     });
   }
 
