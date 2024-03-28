@@ -187,8 +187,8 @@ function Signup() {
               </div>
             </div>
           </form>
-          <div className="w- flex cursor-pointer items-center justify-around rounded-full bg-white py-2 md:w-2/5">
-            <img src={googleLogo} alt="google-logo" className="h-8 w-8" />
+          <div className="w- flex cursor-pointer items-center justify-center rounded-full bg-white py-2 md:w-2/5">
+            <img src={googleLogo} alt="google-logo" className="mx-2 h-8 w-8" />
             <div className="font-semibold">Login with google</div>
           </div>
         </div>
