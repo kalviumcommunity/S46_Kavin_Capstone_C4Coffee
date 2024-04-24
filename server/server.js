@@ -3,6 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
+const userRoute = require("./routes/userRouter");
+
 const app = express();
 
 app.use((req, res, next) => {
@@ -14,9 +16,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.status(200).json({message: "Server is running"})
-})
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Server is running" });
+});
+
+app.use("/user", userRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

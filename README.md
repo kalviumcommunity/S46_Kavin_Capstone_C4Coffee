@@ -23,7 +23,6 @@ Create an account to personalize your C4Coffee experience. Login to access exclu
 - Node.js
 - Express.js
 - MongoDB
-- Passport.js (for authentication)
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/yourusername/C4Coffee.git`
