@@ -2,7 +2,7 @@ const { OAuth2Client } = require("google-auth-library");
 
 const User = require("../models/userModel");
 const { hashPassword, checkPassword } = require("../utils/passwordHandler");
-const setCookies = require("../utils/cookieHandler");
+const { setCookies } = require("../utils/cookieHandler");
 const getUserData = require("../config/googleAuthClient");
 
 function init(req, res) {
