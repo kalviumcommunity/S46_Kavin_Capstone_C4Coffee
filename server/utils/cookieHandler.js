@@ -1,7 +1,7 @@
 const {
   accessTokenGenerator,
   refreshTokenGenerator,
-} = require("./tokenGenerator");
+} = require("./tokenHandler");
 
 function setCookies(res, data) {
   //Creating token and sending cookies
@@ -19,4 +19,15 @@ function setCookies(res, data) {
   });
 }
 
-module.exports = setCookies;
+function renewAccessToken(res, data) {
+  const accessToken = accessTokenGenerator(data);
+
+  res.cookie("accessToken", `Bearer ${accessToken}`, {
+    httpOnly: true,
+    maxAge: 5 * 60 * 1000,
+  });
+
+  return accessToken
+}
+
+module.exports = {setCookies, renewAccessToken};

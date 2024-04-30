@@ -7,9 +7,11 @@ function accessTokenGenerator(id) {
 }
 
 function refreshTokenGenerator(id) {
-  return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
+  return jwt.sign({ id }, process.env.REFRESH_TOKEN_SECRET, {
     expiresIn: "7d",
   });
 }
+
+function parseToken(token) {}
 
 module.exports = { accessTokenGenerator, refreshTokenGenerator };
