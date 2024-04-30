@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 
 const userRoute = require("./routes/userRoute");
 const shopRoute = require("./routes/shopReviewRoute");
+const commentRoute = require("./routes/commentRoute");
 const { connectToDB, checkConnection } = require("./config/db");
 const authorizeToken = require("./middleware/tokenAuthorizer");
 
@@ -33,6 +34,7 @@ app.get("/db", (req, res) => {
 
 app.use("/user", userRoute);
 app.use("/shop", authorizeToken, shopRoute);
+app.use("/comment", authorizeToken, commentRoute)
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
