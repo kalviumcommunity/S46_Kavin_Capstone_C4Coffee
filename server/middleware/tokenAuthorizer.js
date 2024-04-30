@@ -14,7 +14,6 @@ function authorizeToken(req, res, next) {
       );
 
       const accessToken = renewAccessToken(res, id);
-      console.log(accessToken);
       req.user = jwt.verify(accessToken, process.env.ACCESS_TOKEN_SECRET);
     } else {
       req.user = jwt.verify(

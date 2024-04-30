@@ -5,6 +5,6 @@ const { addShopReview } = require("../controller/shopReviewController");
 
 const upload = multer();
 
-router.post("/addReview", upload.none(), addShopReview);
+router.post("/addReview", upload.single('image'), addShopReview);
 
 module.exports = router;
