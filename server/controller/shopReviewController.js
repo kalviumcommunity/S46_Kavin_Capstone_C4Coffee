@@ -6,15 +6,17 @@ async function addShopReview(req, res) {
   }
   const { id } = req.user;
   const { name, desc, rating } = req.body;
+  const { buffer } = req.file;
 
   const newShopReview = await ShopReview.create({
     name,
     desc,
     rating,
+    image: buffer,
     userId: id,
   });
 
-  res.status(201).json({ newShopReview });
+  res.status(201).json(newShopReview);
 }
 
 module.exports = { addShopReview };
