@@ -3,10 +3,10 @@ const ShopReview = require("../models/shopReviewModel");
 
 async function addComment(req, res) {
   const { id } = req.user;
-  const { desc, rating, shopId } = req.body;
+  const { content, rating, shopId } = req.body;
 
   const newComment = await Comment.create({
-    desc,
+    content,
     rating,
     userId: id,
     shopId,
