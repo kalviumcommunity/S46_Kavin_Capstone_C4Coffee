@@ -9,6 +9,7 @@ const shopRoute = require("./routes/shopReviewRoute");
 const commentRoute = require("./routes/commentRoute");
 const { connectToDB, checkConnection } = require("./config/db");
 const authorizeToken = require("./middleware/tokenAuthorizer");
+const startGraphqlServer = require("./graphql/init");
 
 const app = express();
 
@@ -34,7 +35,9 @@ app.get("/db", (req, res) => {
 
 app.use("/user", userRoute);
 app.use("/shop", authorizeToken, shopRoute);
-app.use("/comment", authorizeToken, commentRoute)
+app.use("/comment", authorizeToken, commentRoute);
+
+startGraphqlServer(app);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
