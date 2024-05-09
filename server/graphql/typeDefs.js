@@ -24,9 +24,26 @@ const typeDefs = `#graphql
         rating: Int!,
         createdAt: Date!
     }
-
     type Query {
         allReviews: [Shop]!
+    }
+
+    type Mutation {
+        updateReview(id: String!, input: updateReviewInput!): Shop!
+        updateComment(id: String!, input: updateCommentInput!): Comment!
+        deleteReview(id: String!): Shop!
+        deleteComment(id:String!): Comment!
+    }
+
+    input updateReviewInput {
+        name: String,
+        desc: String,
+        rating: Int
+    }
+
+    input updateCommentInput {
+        content: String,
+        rating: Int
     }
 `;
 
