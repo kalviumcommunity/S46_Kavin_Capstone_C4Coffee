@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "CoffeeDrink": "Espresso",
+    "Description": "Espresso is a concentrated coffee beverage brewed by forcing a small amount of nearly boiling water through finely-ground coffee beans. It is characterized by its strong flavor and crema layer on top. A single shot of espresso typically contains around 63-70 milligrams of caffeine.",
+    "CaffeineContent": "63-70 mg per shot",
+    "ImageLink": "https://www.thespruceeats.com/thmb/HJrjMfXdLGHbgMhnM0fMkDx9XPQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-espresso-765702-hero-03_cropped-ffbc0c7cf45a46ff846843040c8f370c.jpg"
+  },
+  {
+    "id": 2,
+    "CoffeeDrink": "Americano",
+    "Description": "Americano is made by diluting espresso with hot water, giving it a similar strength to drip coffee but with a distinct espresso flavor. It has a smooth and robust taste with a caffeine content similar to espresso, around 63-70 milligrams per 8 oz serving.",
+    "CaffeineContent": "63-70 mg per 8 oz",
+    "ImageLink": "https://www.taylorlane.com/cdn/shop/articles/Delicious-Homemade-Americano_1000x.jpg?v=1605897263"
+  },
+  {
+    "id": 3,
+    "CoffeeDrink": "Cappuccino",
+    "Description": "Cappuccino is an Italian coffee drink made with equal parts espresso, steamed milk, and milk foam. It has a creamy texture and a balanced flavor profile. A standard 8-ounce cappuccino contains around 63-70 milligrams of caffeine.",
+    "CaffeineContent": "63-70 mg per 8 oz",
+    "ImageLink": "https://www.thespruceeats.com/thmb/oUxhx54zsjVWfPlrgedJU0MZ-y0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-make-cappuccinos-766116-hero-01-a754d567739b4ee0b209305138ecb996.jpg"
+  },
+  {
+    "id": 4,
+    "CoffeeDrink": "Latte",
+    "Description": "Latte is a popular coffee drink made with espresso and steamed milk. It has a smooth and velvety texture, with a mild espresso flavor. A standard 8-ounce latte contains around 63-70 milligrams of caffeine.",
+    "CaffeineContent": "63-70 mg per 8 oz",
+    "ImageLink": "https://dairyfarmersofcanada.ca/sites/default/files/image_file_browser/conso_recipe/2021/Cafe%20Latte.jpg"
+  },
+  {
+    "id": 5,
+    "CoffeeDrink": "Macchiato",
+    "Description": "Macchiato is an espresso-based drink with a small amount of steamed milk or milk foam added, creating a layered appearance. It has a bold espresso flavor with a hint of creaminess. A single shot of macchiato contains around 63-70 milligrams of caffeine.",
+    "CaffeineContent": "63-70 mg per shot",
+    "ImageLink": "https://parade.com/.image/t_share/MTk1MzA0NTgyOTIwODA3NzM4/what-is-a-macchiato.jpg"
+  },
+  {
+    "id": 6,
+    "CoffeeDrink": "Mocha",
+    "Description": "Mocha is a delicious coffee beverage made with espresso, steamed milk, and chocolate syrup or cocoa powder. It has a rich and indulgent flavor with a caffeine content similar to that of a standard latte or cappuccino, around 63-70 milligrams per 8 oz serving.",
+    "CaffeineContent": "63-70 mg per 8 oz",
+    "ImageLink": "https://athome.starbucks.com/sites/default/files/2021-06/1_CAH_CaffeMocha_Hdr_2880x16602.jpg"
+  },
+  {
+    "id": 7,
+    "CoffeeDrink": "Flat White",
+    "Description": "Flat White is an espresso-based drink originating from Australia, made with a double shot of espresso and velvety steamed milk. It has a smooth and creamy texture with a rich coffee flavor. A standard 8-ounce flat white contains around 63-70 milligrams of caffeine.",
+    "CaffeineContent": "63-70 mg per 8 oz",
+    "ImageLink": "https://methodicalcoffee.com/cdn/shop/articles/Flat_white_sitting_on_a_table.jpg?v=1695740372"
+  },
+  {
+    "id": 8,
+    "CoffeeDrink": "Affogato",
+    "Description": "Affogato is an Italian dessert-style coffee made by pouring a shot of hot espresso over a scoop of vanilla ice cream or gelato. It combines the richness of coffee with the creaminess of ice cream, creating a delightful contrast of flavors and textures. A single shot of affogato typically contains around 63-70 milligrams of caffeine.",
+    "CaffeineContent": "63-70 mg per shot",
+    "ImageLink": "https://pastaevangelists.com/cdn/shop/articles/Affogato_1200x1200.png?v=1621613046"
+  },
+  {
+    "id": 9,
+    "CoffeeDrink": "Turkish Coffee",
+    "Description": "Turkish coffee is a traditional method of brewing coffee that originated in Turkey. It is made by simmering finely ground coffee beans in water (often with sugar) in a special pot called a cezve. Turkish coffee has a strong and bold flavor with a thick and muddy texture. A standard serving of Turkish coffee contains around 50-60 milligrams of caffeine per shot.",
+    "CaffeineContent": "50-60 mg per shot",
+    "ImageLink": "https://foolproofliving.com/wp-content/uploads/2019/03/Turkish-Coffee-Recipe-Image.jpg"
+  },
+  {
+    "id": 10,
+    "CoffeeDrink": "Irish Coffee",
+    "Description": "Irish Coffee is a classic cocktail made with hot coffee, Irish whiskey, sugar, and topped with whipped cream. It has a rich and warming flavor with a caffeine content that varies depending on the type and amount of coffee used.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://www.thespruceeats.com/thmb/BaTQiJBdsmkbQvBZO6HaoeBoNgE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/original-irish-coffee-recipe-759311-Hero-5b759d4b46e0fb005089915e.jpg"
+  },
+  {
+    "id": 11,
+    "CoffeeDrink": "Greek Frappé",
+    "Description": "Greek Frappé is a popular iced coffee drink originating from Greece. It is made with instant coffee, sugar, and water, served over ice. Greek Frappé has a frothy texture and strong coffee flavor with a hint of sweetness from the sugar. The caffeine content varies depending on the strength of the coffee and the amount of sugar used.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4WC2cM948kuB4iuiXOyx5ZGY44F1g2dZNfrXjx170w&s"
+  },
+  {
+    "id": 12,
+    "CoffeeDrink": "Spanish Latte",
+    "Description": "Spanish Latte is a creamy and indulgent coffee drink made with espresso and sweetened condensed milk. It originated in Spain and has since become popular worldwide for its rich and velvety texture. Spanish Latte has a smooth and sweet flavor profile, with the condensed milk adding a delightful creaminess to the espresso.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXdonlUA5bJe7u_m0jUah_iX6e33rjZPiyYFnNbs5xXA&s"
+  },
+  {
+    "id": 13,
+    "CoffeeDrink": "Bulletproof Coffee",
+    "Description": "Bulletproof Coffee is a high-fat coffee drink made with brewed coffee, grass-fed butter, and medium-chain triglyceride (MCT) oil or coconut oil. It is popular among proponents of the ketogenic diet and is touted for its potential health benefits, including increased energy and mental clarity. Bulletproof Coffee has a creamy texture and rich flavor, with the butter and oil adding a smooth and satisfying mouthfeel.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://images.getrecipekit.com/20231208123453-recipe-20-20bulletproof-20coffee.jpg?aspect_ratio=4:3&quality=90&"
+  },
+  {
+    "id": 14,
+    "CoffeeDrink": "Cortado",
+    "Description": "Cortado is a Spanish coffee drink made with equal parts espresso and warm milk. It has a bold coffee flavor with a subtle sweetness from the milk. Cortado is often served in a small glass and enjoyed as a mid-morning or afternoon pick-me-up.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://upload.wikimedia.org/wikipedia/commons/1/16/Caf%C3%A9Cortado%28Tallat%29.jpg"
+  },
+  {
+    "id": 15,
+    "CoffeeDrink": "Galão",
+    "Description": "Galão is a Portuguese coffee drink made with espresso and foamed milk. It has a creamy texture and milder coffee flavor compared to a cappuccino or latte. Galão is often served in a tall glass and enjoyed as a breakfast beverage or mid-day treat.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAAivcwlqORomN_5sQK-C77TaR4xH7U6W6_f7XxIkU7w&s"
+  },
+  {
+    "id": 16,
+    "CoffeeDrink": "Cortado Condensado",
+    "Description": "Cortado Condensado is a Brazilian coffee drink made with espresso and condensed milk. It has a sweet and creamy flavor profile, with the condensed milk adding richness to the espresso. Cortado Condensado is often enjoyed as a dessert or special treat.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://thumbs.dreamstime.com/b/leche-do-de-cortado-um-caf%C3%A9-espanhol-em-ilhas-can%C3%A1rias-com-leite-condensado-abrandado-nas-uma-tabela-marrom-147207830.jpg"
+  },
+  {
+    "id": 17,
+    "CoffeeDrink": "Café au Lait",
+    "Description": "Café au Lait, meaning 'coffee with milk' in French, is a classic French coffee drink made with equal parts brewed coffee and steamed milk. It has a smooth and mild flavor profile, making it a popular choice for breakfast or brunch.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://images.ctfassets.net/v601h1fyjgba/CCwO1JxpaUZpPLM7cas6j/6875a86a118947fe54825092c2fdd645/Cafe_Au_Lait.jpg"
+  },
+  {
+    "id": 18,
+    "CoffeeDrink": "Viennese Coffee",
+    "Description": "Viennese Coffee is a traditional Austrian coffee drink made with black coffee and whipped cream. It has a rich and indulgent flavor with a creamy texture from the whipped cream. Viennese Coffee is often enjoyed as a dessert or special treat.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://cafe1820.com/wp-content/uploads/2022/03/Cafe-vienes-1.jpg"
+  },
+  {
+    "id": 19,
+    "CoffeeDrink": "Irish Cream Coffee",
+    "Description": "Irish Cream Coffee is a delicious cocktail made with coffee, Irish cream liqueur, and whipped cream. It has a rich and creamy flavor with a hint of sweetness from the Irish cream. Irish Cream Coffee is often enjoyed as an after-dinner drink or dessert cocktail.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://xoxobella.com/wp-content/uploads/2021/02/the_easy_way_to_make_Irish_cream_coffee_bella_bucchiotti_5.jpg"
+  },
+  {
+    "id": 20,
+    "CoffeeDrink": "Red Eye",
+    "Description": "Red Eye, also known as a Shot in the Dark, is a coffee drink made with brewed coffee and a shot of espresso. It is known for its strong and bold flavor, making it a popular choice for those in need of a caffeine boost.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY2ZziCyI47zgJrJPYL-7KAiQePTT2Vf-UPTN4dqk1Pg&s"
+  },
+  {
+    "id": 21,
+    "CoffeeDrink": "Black Eye",
+    "Description": "Black Eye is similar to a Red Eye but with two shots of espresso instead of one. It has a higher caffeine content and a stronger flavor profile, making it a favorite among espresso enthusiasts.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://curlytales.com/wp-content/uploads/2024/02/Coffee-1-1-673x450.jpg"
+  },
+  {
+    "id": 22,
+    "CoffeeDrink": "Green Eye",
+    "Description": "Green Eye is a coffee drink made with brewed coffee and three shots of espresso. It has a robust flavor and a high caffeine content, making it a powerful pick-me-up for those in need of a caffeine boost.",
+    "CaffeineContent": "Varies",
+    "ImageLink": "https://brewespressocoffee.com/wp-content/uploads/2022/03/Black-Eye-Coffee-1.jpg.webp"
+  }
+]

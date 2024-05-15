@@ -1,8 +1,17 @@
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./screens/MainPage";
+import Signup from "./screens/SignupPage";
+import Login from "./screens/LoginPage";
+
 function App() {
   return (
-    <>
-      <div className="text-5xl font-bold text-blue-500 text-center">Hello</div>
-    </>
+    <div className="app">
+      <Routes>
+        <Route path="*" element={<MainPage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
   );
 }
 
