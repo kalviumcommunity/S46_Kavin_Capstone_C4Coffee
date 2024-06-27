@@ -14,7 +14,8 @@ const typeDefs = `#graphql
         rating: Int!,
         image: Buffer!,
         comment: [Comment!],
-        createdAt: Date!
+        createdAt: Date!,
+        _id: String!
     }
 
     type Comment {
@@ -22,10 +23,12 @@ const typeDefs = `#graphql
         userId: User!,
         content: String!,
         rating: Int!,
-        createdAt: Date!
+        createdAt: Date!,
+        _id: String!
     }
     type Query {
-        allReviews: [Shop]!
+        allReviews: [Shop!]
+        reviewById(id: String!): Shop!
     }
 
     type Mutation {

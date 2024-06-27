@@ -1,4 +1,4 @@
-const {GraphQLError} = require('graphql')
+const { GraphQLError } = require("graphql");
 
 const ShopReview = require("../models/shopReviewModel");
 const Comment = require("../models/commentModel");
@@ -22,6 +22,9 @@ const resolvers = {
   Query: {
     async allReviews() {
       return await ShopReview.find({});
+    },
+    async reviewById(_, args) {
+      return await ShopReview.findById(args.id);
     },
   },
   Shop: {
