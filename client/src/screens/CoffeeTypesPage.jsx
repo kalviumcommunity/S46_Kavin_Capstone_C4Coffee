@@ -1,4 +1,4 @@
-import CoffeeDesc from "../components/CoffeeTypes/CoffeeDesc";
+import CoffeeDesc from "../components/CoffeeTypesPage/CoffeeDesc";
 import data from "../data.json";
 
 function CoffeeTypes() {

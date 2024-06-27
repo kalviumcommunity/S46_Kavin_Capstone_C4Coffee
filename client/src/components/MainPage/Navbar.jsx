@@ -6,8 +6,8 @@ function Navbar() {
   const [showDropDown, setShowDropDown] = useState(false);
 
   return (
-    <>
-      <div className="sticky top-0 z-10 grid w-full grid-cols-2 items-center justify-center bg-backGround2 shadow-lg md:grid-cols-3">
+    <div className="sticky top-0">
+      <div className="grid w-full grid-cols-2 items-center justify-center bg-backGround2 shadow-lg md:grid-cols-3">
         <div className="mx-10 flex flex-row items-center md:col-span-1">
           <img src={logo} alt="logo" className="m-2 h-10 md:h-16" />
           <span className="hidden text-3xl font-extrabold text-text2 xl:block">
@@ -101,7 +101,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
