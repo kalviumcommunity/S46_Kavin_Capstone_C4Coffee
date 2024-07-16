@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Star from "../components/ShopReviewPage/Star";
 import Comment from "../components/ShopReviewPage/Comment";
 
-function ReviewPage() {
+function ReviewPage({setState}) {
   const { id } = useParams();
   const [data, setData] = useState(null);
 
@@ -60,7 +60,7 @@ function ReviewPage() {
       <div>
         <div className="flex justify-between items-center my-2">
           <div className="my-4 text-3xl font-bold text-text1">Comments</div>
-          <div className="flex cursor-pointer gap-1 rounded bg-text2 p-2 text-backGround1 shadow">
+          <div className="flex cursor-pointer gap-1 rounded bg-text2 p-2 text-backGround1 shadow" onClick={()=>setState(id)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -19,7 +19,7 @@ const GET_REVIEWS = {
   variables: {},
 };
 
-function ShopReviewPage() {
+function ShopReviewPage({setState}) {
   useEffect(() => {
     axios
       .post("http://localhost:3000/graphql", GET_REVIEWS)
@@ -30,7 +30,7 @@ function ShopReviewPage() {
   return (
     <div className="min-h-dvh bg-backGround1 px-14 py-10">
       <div className="flex justify-end pb-4">
-        <div className="cursor-pointer rounded bg-text2 p-2 text-backGround1 shadow flex gap-1">
+        <div className="cursor-pointer rounded bg-text2 p-2 text-backGround1 shadow flex gap-1" onClick={()=>setState(id)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
